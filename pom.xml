@@ -38,7 +38,7 @@
 			        <configuration>
 			          	<fromDir>${project.build.directory}</fromDir>
 			          	<includes>*</includes>
-			           	<url>/home/egill/</url>
+			           	<url>/home/egill</url>
 			          	<toDir>repository</toDir>
 			        </configuration>
 		    	</plugin>  
