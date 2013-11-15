@@ -6,17 +6,6 @@
 	<groupId>is.ru</groupId>
 	<version>1.0-SNAPSHOT</version>
 	<artifactId>tictactoe</artifactId>
-	
-	<!-- Ftp stillingar fyrir deployment-->
-	<distributionManagement>
-    <repository>
-      <id>1984.is</id>
-      <url>ftp://ronette.1984.is</url>
-    </repository>
-  </distributionManagement>
-
-
-
 	<build>
     		<plugins>
       			<plugin>
