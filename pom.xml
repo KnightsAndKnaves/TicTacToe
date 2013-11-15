@@ -7,6 +7,16 @@
 	<version>1.0-SNAPSHOT</version>
 	<artifactId>tictactoe</artifactId>
 	
+	<!-- Ftp stillingar fyrir deployment-->
+	<distributionManagement>
+    <repository>
+      <id>1984.is</id>
+      <url>ftp://ronette.1984.is</url>
+    </repository>
+  </distributionManagement>
+
+
+
 	<build>
     		<plugins>
       			<plugin>
@@ -17,9 +27,37 @@
           				<source>1.5</source>
           				<target>1.5</target>
         			</configuration>
+
       			</plugin>
 
-      			<!-- Egill að reyna að fá Maven til að keyra helvítis forritið -->
+      			<!-- Maven stillingar til að deploya forriti í /home/egill/ -->
+      			<plugin>
+			        <groupId>org.codehaus.mojo</groupId>
+			        <artifactId>wagon-maven-plugin</artifactId>
+			        <version>1.0-beta-3</version>
+			        <executions>
+			          	<execution>
+			            	<id>upload-jar-to-folder</id>
+			            	<phase>deploy</phase>
+			            	<goals>
+			              		<goal>upload</goal>
+			            	</goals>
+			          	</execution>
+			        </executions>
+			        <configuration>
+			          	<fromDir>${project.build.directory}</fromDir>
+			          	<includes>*</includes>
+			           	<url>/home/egill/</url>
+			          	<toDir>repository</toDir>
+			        </configuration>
+		    	</plugin>  
+
+      			<!-- Maven stillingar til að deploya forriti í /home/egill/ ENDAR-->
+
+
+
+
+      			<!-- Maven stillingar til að keyra forrit -->
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>exec-maven-plugin</artifactId>
@@ -28,6 +66,9 @@
 					    <mainClass>is.ru.tictactoe.HelloWorld</mainClass>
 					</configuration>
 				</plugin>
+				<!-- Maven stillingar til að keyra forrit enda -->
+
+
     		</plugins>
   	</build>
 
