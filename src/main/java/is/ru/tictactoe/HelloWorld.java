@@ -5,5 +5,6 @@ public class HelloWorld{
 	{
 		TicTacToe test = new TicTacToe();
 		System.out.println(test.greet());
+		System.out.println("EG KEYRI EDLILEGA");
 	}	
 }	
