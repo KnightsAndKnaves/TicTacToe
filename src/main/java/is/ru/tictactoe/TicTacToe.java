@@ -8,7 +8,11 @@ public class TicTacToe{
 
 	public static void main(String[] args)
 	{
+		HelloWorld test = new HelloWorld();
 		System.out.println("Ég er aðalforrit og ég virka");
+		System.out.println(test.greet());
+
+		//Hér byrjar leikurinn sjálfur
 	}
 }
 

@@ -1,10 +1,10 @@
 package is.ru.tictactoe;
 
 public class HelloWorld{
-	public static void main(String[] args)
+	public String greet()
 	{
-		TicTacToe test = new TicTacToe();
-		//System.out.println(test.greet());
+		//TicTacToe test = new TicTacToe();
+		return "Hello World!";
 		//System.out.println("EG KEYRI EDLILEGA");
 	}	
 }	
