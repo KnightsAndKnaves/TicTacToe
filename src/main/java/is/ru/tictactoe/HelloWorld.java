@@ -4,7 +4,7 @@ public class HelloWorld{
 	public static void main(String[] args)
 	{
 		TicTacToe test = new TicTacToe();
-		System.out.println(test.greet());
-		System.out.println("EG KEYRI EDLILEGA");
+		//System.out.println(test.greet());
+		//System.out.println("EG KEYRI EDLILEGA");
 	}	
 }	
