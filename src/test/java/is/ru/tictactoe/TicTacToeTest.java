@@ -5,6 +5,7 @@ public class TicTacToeTest{
   
 	@Test
 	public void greetResultInHello(){
+		System.out.println("greetResultInHello TEST");
 			//assertEquals("Hello World!", );
 		
 	}     
