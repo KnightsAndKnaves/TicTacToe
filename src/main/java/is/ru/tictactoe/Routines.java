@@ -1,10 +1,10 @@
 package is.ru.tictactoe;
 
+//Þessi skrá er tilvalin til að geyma einhver föll sem aðalforritið notar við keyrslu leiksins
+
 public class Routines{
 	public String greet()
 	{
-		//TicTacToe test = new TicTacToe();
 		return "Hello World!";
-		//System.out.println("EG KEYRI EDLILEGA");
 	}	
 }	
