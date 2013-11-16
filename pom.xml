@@ -28,6 +28,7 @@
                     </configuration>
                 </plugin>
 
+                
 
       			<!-- Maven stillingar til að deploya forriti í /home/egill
       			<plugin>
@@ -71,6 +72,21 @@
 
     		</plugins>
   	</build>
+
+  	<!-- Code inspection og Code coverages-->
+  	<reporting>
+    	<plugins>
+      		<plugin>
+        		<groupId>org.codehaus.mojo</groupId>
+        		<artifactId>emma-maven-plugin</artifactId>
+        		<version>1.0-alpha-3</version>
+      		</plugin>
+    	</plugins>
+  	</reporting>
+
+
+
+	<!-- Code inspection og Code coverages ENDAR-->
 
 
 
