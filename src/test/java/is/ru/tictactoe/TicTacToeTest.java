@@ -4,10 +4,10 @@ import org.junit.Test;
 public class TicTacToeTest{
   
 	@Test
-	public void greetResultInHello(){
+	public void greetResultInRoutines(){
 		System.out.println("greetResultInHello TEST");
-		HelloWorld world = new HelloWorld();
-		assertEquals("Hello Wo", world.greet());
+		Routines world = new Routines();
+		assertEquals("Hello World!", world.greet());
 		
 	}     
 }
