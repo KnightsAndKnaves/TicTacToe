@@ -8,7 +8,7 @@ public class TicTacToe{
 	{
 		Routines test = new Routines();
 		//System.out.println("Ég er aðalforrit og ég virka");
-		System.out.println(test.intro);
+		test.intro();
 
 		//Hér byrjar leikurinn sjálfur
 	}
