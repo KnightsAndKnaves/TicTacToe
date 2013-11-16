@@ -5,7 +5,6 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>is.ru</groupId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
 	<artifactId>tictactoe</artifactId>
 	
 	<build>
@@ -19,7 +18,7 @@
           				<target>1.5</target>
         			</configuration>
       			</plugin>
-
+      			<!--
       			<plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
@@ -28,7 +27,7 @@
                         <outputDirectory>/home/egill/</outputDirectory>
                     </configuration>
                 </plugin>
-
+				-->
       			<!-- Maven stillingar til að keyra forrit -->
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
