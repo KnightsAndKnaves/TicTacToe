@@ -5,6 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>is.ru</groupId>
 	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<artifactId>tictactoe</artifactId>
 	
 	<build>
@@ -27,35 +28,6 @@
                         <outputDirectory>/home/egill/</outputDirectory>
                     </configuration>
                 </plugin>
-
-                
-
-      			<!-- Maven stillingar til að deploya forriti í /home/egill
-      			<plugin>
-			        <groupId>org.codehaus.mojo</groupId>
-			        <artifactId>wagon-maven-plugin</artifactId>
-			        <version>1.0-beta-3</version>
-			        <executions>
-			          	<execution>
-			            	<id>upload-jar-to-folder</id>
-			            	<phase>deploy</phase>
-			            	<goals>
-			              		<goal>upload</goal>
-			            	</goals>
-			          	</execution>
-			        </executions>
-			        <configuration>
-			          	<fromDir>${project.build.directory}</fromDir>
-			          	<includes>*</includes>
-			           	<url>../</url>
-			          	
-			        </configuration>
-		    	</plugin>  
-
-      			 Maven stillingar til að deploya forriti í /home/egill/ ENDAR-->
-
-
-
 
       			<!-- Maven stillingar til að keyra forrit -->
 				<plugin>
