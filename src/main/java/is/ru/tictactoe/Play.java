@@ -25,7 +25,7 @@ public class Play {
 		Game game = new Game(p1, p2, board);
 		game.intro();
 
-		
+		/*
 		//Ask if user wants to play
 		System.out.println("Want to play TicTacToe ? (J/N):");
 		Scanner a = new Scanner(System.in);
@@ -33,7 +33,7 @@ public class Play {
 		svar=a.nextLine();
 		if(svar=="n" || svar=="N")
 			return;
-		
+		*/
 
 
 
