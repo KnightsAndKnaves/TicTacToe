@@ -38,29 +38,25 @@
 					</configuration>
 				</plugin>
 				<!-- Maven stillingar til að keyra forrit enda -->
+ <!-- Code inspection og Code coverages-->
+         <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.16</version>
+        <dependencies>
+          <dependency>
+            <groupId>org.apache.maven.surefire</groupId>
+            <artifactId>surefire-junit47</artifactId>
+            <version>2.16</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+<!-- Code inspection og Code coverages enda -->
 
 
 
     		</plugins>
   	</build>
-
-  	<!-- Code inspection og Code coverages-->
-  	<reporting>
-    	<plugins>
-      		<plugin>
-        		<groupId>org.codehaus.mojo</groupId>
-        		<artifactId>emma-maven-plugin</artifactId>
-        		<version>1.0-alpha-3</version>
-      		</plugin>
-    	</plugins>
-  	</reporting>
-
-
-
-	<!-- Code inspection og Code coverages ENDAR-->
-
-
-
 
 	<dependencies>
 	   <dependency>
