@@ -37,7 +37,7 @@ public class GameTest {
 		
 		//Winner
 		bord.addLetter(0, 'X');
-
+		bord.addLetter(0, 'O');
 
 		bord.printBoard();
 		
