@@ -5,11 +5,7 @@ public class Game {
 	private Player player2;
 	private Board board;
 	
-	public void intro(){
-		System.out.println("#################################");
-		System.out.println("### Velkomin(n) í Tic Tac Toe ###");
-		System.out.println("#################################");
-	} 	
+
 
 	public Game(Player p1, Player p2, Board board) {
 		this.player1 = p1;
@@ -22,6 +18,12 @@ public class Game {
 		else if(playerID == 2) return player2;
 		else return null;
 	}
+
+	public void intro(){
+		System.out.println("#################################");
+		System.out.println("### Velkomin(n) í Tic Tac Toe ###");
+		System.out.println("#################################");
+	} 	
 	
 	public boolean win(char letter) {
 		if(board.getBoard()[0] == letter && board.getBoard()[1] == letter && board.getBoard()[2] == letter)
