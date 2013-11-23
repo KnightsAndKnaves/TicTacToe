@@ -39,6 +39,10 @@ public class Board {
 	// Þetta fall athugar hver er sigurvegari og skilar merkinu hans (X eða O)
 	public char checkWin() {
 		
+		// Jafntefli
+		if(totalMoves>=9)
+			return 'T';
+
 		// Láréttar línur yfir
 		if((this.getBoard()[0] == this.getBoard()[1]) && (this.getBoard()[1] == this.getBoard()[2]))
 			return this.getBoard()[0];
@@ -61,8 +65,6 @@ public class Board {
 		if((this.getBoard()[2] == this.getBoard()[4]) && (this.getBoard()[4] == this.getBoard()[6]))
 			return this.getBoard()[2];
 
-		if(totalMoves>=9)
-			return 'T';
 		// Skilar ef enginn sigurvegari
 		return ' ';
 	}
