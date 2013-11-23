@@ -6,7 +6,7 @@ public class GameTest {
 
 	@Test
 	public void resultInGame() {
-		Game leikur = new Game();
+		//Game leikur = new Game();
 		Board bord = new Board();
 		
 		//Winner
@@ -23,7 +23,7 @@ public class GameTest {
 		bord.addLetter(8, 'O');
 		bord.printBoard();
 		
-		
+
 		//assertEquals('X', leikur.checkWin(bord, 'X'));
 		// TODO Auto-generated method stub
 
