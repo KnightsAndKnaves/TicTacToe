@@ -14,6 +14,21 @@ public class TicTacToe {
 		Game game = new Game(p1, p2, board);
 		game.printIntro();
 		
+		int moves=0;
+		while(board.checkWin == ' ')
+		{
+			
+		}
+
+		System.out.println("Leikmaður " + board.checkWin() + " sigrar");
+
+
+
+
+
+
+
+
 		/*
 		while(game.checkWin==' '){
 

@@ -5,8 +5,10 @@ public class Board {
 	
 	public Board() {
 		this.board = new char[9];
-		for(int i = 0; i < 9; i++)
-			board[i] = ' ';
+		for(int i = 0; i < 9; i++){
+			char c = Character.forDigit(i, 10);
+			board[i] = c;
+		}
 	}
 	/*
 	public char[] getBoard() {

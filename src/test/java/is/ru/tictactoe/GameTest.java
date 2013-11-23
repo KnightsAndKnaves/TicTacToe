@@ -25,7 +25,6 @@ public class GameTest {
 		
 
 		assertEquals('X', bord.checkWin());
-		// TODO Auto-generated method stub
 
 	}
 
@@ -42,7 +41,6 @@ public class GameTest {
 		
 
 		assertEquals(false, bord.canAdd(0));
-		// TODO Auto-generated method stub
 
 	}
 
