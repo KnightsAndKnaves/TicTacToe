@@ -16,8 +16,8 @@ public class TicTacToe {
 		
 		int moves=0;
 
-		System.out.println(p1.getLetter);
-		System.out.println(p2.getLetter);
+		System.out.println(p1.getLetter());
+		System.out.println(p2.getLetter());
 		/*
 		while(board.checkWin == ' ')
 		{
