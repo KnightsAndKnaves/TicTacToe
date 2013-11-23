@@ -34,6 +34,7 @@ public class Game {
 
 		Scanner sc = new Scanner(System.in);
  		int i = sc.nextInt();
+ 		System.out.print("Leikmadur " + player.getId() +  "á ad gera: ");
 		board.addLetter(i, player.getLetter());
 	}
 

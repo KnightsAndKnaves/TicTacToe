@@ -17,4 +17,8 @@ public class Player {
 	public char getLetter() {
 		return letter;
 	}
+
+	public int getId(){
+		return id;
+	}
 }
