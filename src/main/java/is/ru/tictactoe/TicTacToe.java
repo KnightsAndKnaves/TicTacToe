@@ -15,10 +15,12 @@ public class TicTacToe {
 		game.printIntro();
 		
 		int moves=0;
+		/*
 		while(board.checkWin == ' ')
 		{
-			
+
 		}
+		*/
 
 		System.out.println("Leikmaður " + board.checkWin() + " sigrar");
 
