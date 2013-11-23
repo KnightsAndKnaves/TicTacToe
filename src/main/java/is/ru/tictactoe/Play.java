@@ -4,7 +4,7 @@ public class Play {
 	public static void turn(Player player, Board board) {
 		System.out.print("Enter position: ");
 		// get int pos from input using parseInt
-		board.addLetter(pos, player.getLetter());
+		//board.addLetter(pos, player.getLetter());
 		// draw board, need to make function either here or in Board class
 		// check for win or tie
 		//if win/tie, write on the screen who won
