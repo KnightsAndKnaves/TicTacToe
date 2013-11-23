@@ -17,6 +17,8 @@ public class Play {
 	
 
 	public static void main(String[] args) {
+		
+		//Initiate game and print introduction
 		Player p1 = new Player(1, 'X');
 		Player p2 = new Player(2, 'O');
 		Board board = new Board();
@@ -24,11 +26,15 @@ public class Play {
 		game.intro();
 
 		
+		//Ask if user wants to play
 		System.out.println("Eigum við að spila ? (J/N):");
 		Scanner a = new Scanner(System.in);
 		String svar;
 		svar=a.nextLine();
 		System.out.println("Þú valdir:" + svar);
+		if(svar=="n" || svar=="N")
+			System.exit(0);
+		
 
 
 
@@ -38,7 +44,7 @@ public class Play {
 		}
 		turn(p1, board);
 		if(!game.end()) turn(p2, board);
-		if(!game.end()) turn(p1, board);
+		if(!game.end()) turn(p1, board);j
 		if(!game.end()) turn(p2, board);
 		if(!game.end()) turn(p1, board);
 	}
