@@ -15,12 +15,11 @@ public class Play {
 	
 
 	public static void main(String[] args) {
-		Routines test = new Routines();
-		System.out.println(test.greet());
 		Player p1 = new Player(1, 'X');
 		Player p2 = new Player(2, 'O');
 		Board board = new Board();
 		Game game = new Game(p1, p2, board);
+		System.out.println(game.intro());
 		for(int i = 0; i < 2; i++) {
 			turn(p1, board);
 			turn(p2, board);
