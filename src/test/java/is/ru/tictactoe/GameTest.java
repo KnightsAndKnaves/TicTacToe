@@ -29,4 +29,21 @@ public class GameTest {
 
 	}
 
+
+	@Test
+	public void resultInGame2() {
+		Board bord = new Board();
+		
+		//Winner
+		bord.addLetter(0, 'X');
+
+
+		bord.printBoard();
+		
+
+		assertEquals(false, bord.canAdd(0));
+		// TODO Auto-generated method stub
+
+	}
+
 }

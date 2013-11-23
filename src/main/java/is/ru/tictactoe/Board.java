@@ -13,6 +13,9 @@ public class Board {
 		return board;
 	}
 	*/
+
+	// Tilbúið
+	// Prentar út stöðu borðsins
 	public void printBoard(){
 		System.out.println(board[0] + " " + board[1] + " " + board[2]);
 		System.out.println("     ");
@@ -22,11 +25,14 @@ public class Board {
 	}
 
 
+	// Tilbúið
+	// Sækir private breytuna board
 	public char[] getBoard(){
 		return board;
 	}
 
 
+	// TILBÚIÐ
 	// Þetta fall athugar hver er sigurvegari og skilar merkinu hans (X eða O)
 	public char checkWin() {
 		
@@ -59,6 +65,7 @@ public class Board {
 
 
 
+	// Merkir við í borðið
 	public void addLetter(int pos, char letter) {
 		if(pos < 9 && pos >= 0 && canAdd(pos))
 			board[pos] = letter;
