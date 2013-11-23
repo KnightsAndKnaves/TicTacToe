@@ -18,13 +18,15 @@ public class Game {
 	}
 	*/
 	public void printIntro(){
-		System.out.println("##############################");
-		System.out.println("### Want to play TicTacToe ###");
-		System.out.println("##############################");
+		System.out.println("###############################");
+		System.out.println("## Want to play TicTacToe ? ###");
+		System.out.println("###############################");
 	}
 
 	public boolean playAgain(){
-		
+
+		// Á eftir að útfæra
+		return false;
 	}
 
 
