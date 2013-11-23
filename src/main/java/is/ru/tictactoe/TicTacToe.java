@@ -13,7 +13,7 @@ public class TicTacToe {
 		Board board = new Board();
 		Game game = new Game(p1, p2, board);
 		game.printIntro();
-		
+		board.printBoard();
 		int moves=0;
 
 

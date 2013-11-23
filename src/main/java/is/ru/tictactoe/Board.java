@@ -61,7 +61,7 @@ public class Board {
 		if((this.getBoard()[2] == this.getBoard()[4]) && (this.getBoard()[4] == this.getBoard()[6]))
 			return this.getBoard()[2];
 
-		if(totalMoves==9)
+		if(totalMoves>=9)
 			return 'T';
 		// Skilar ef enginn sigurvegari
 		return ' ';
