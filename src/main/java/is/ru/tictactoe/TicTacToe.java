@@ -15,7 +15,7 @@ public class TicTacToe {
 		game.printIntro();
 		
 
-		string s;
+		String s;
 		do {
 		// Play again ?
 		System.out.println("Want to play again ? (y/n):");
