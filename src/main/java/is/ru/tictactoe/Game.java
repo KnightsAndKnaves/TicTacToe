@@ -48,7 +48,7 @@ public class Game {
 		if(board.getBoard()[0] == letter && board.getBoard()[4] == letter && board.getBoard()[8] == letter)
 			return board.getBoard()[0];
 		if(board.getBoard()[2] == letter && board.getBoard()[4] == letter && board.getBoard()[6] == letter)
-			return return board.getBoard()[2];;
+			return board.getBoard()[2];;
 
 
 		// Skilar ef enginn sigurvegari
