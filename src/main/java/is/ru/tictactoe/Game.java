@@ -28,8 +28,11 @@ public class Game {
 	} 	
 	
 	public char checkWinner(Board bord, char letter) {
-		if(board.getBoard()[0] == letter && board.getBoard()[1] == letter && board.getBoard()[2] == letter)
+		/*
+		if((board.getBoard()[0] == letter) && (board.getBoard()[3] == letter) && (board.getBoard()[6] == letter))
 			return letter;
+		*/
+		/*
 		if(board.getBoard()[3] == letter && board.getBoard()[4] == letter && board.getBoard()[5] == letter)
 			return letter;
 		if(board.getBoard()[6] == letter && board.getBoard()[7] == letter && board.getBoard()[8] == letter)
@@ -44,7 +47,8 @@ public class Game {
 			return letter;
 		if(board.getBoard()[2] == letter && board.getBoard()[4] == letter && board.getBoard()[6] == letter)
 			return letter;
-		return ' ';
+		*/
+		return letter;
 	}
 	/*
 	public boolean tie() {

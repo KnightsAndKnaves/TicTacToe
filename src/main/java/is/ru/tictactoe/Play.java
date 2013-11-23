@@ -26,10 +26,10 @@ public class Play {
 		game.intro();
 		
 		
-		while(){
+		//while(){
 			
 			
-		}
+		
 		/*
 		//Ask if user wants to play
 		System.out.println("Want to play TicTacToe ? (J/N):");
@@ -41,7 +41,7 @@ public class Play {
 		*/
 
 
-
+		/*
 		for(int i = 0; i < 2; i++) {
 			turn(p1, board);
 			turn(p2, board);
@@ -51,5 +51,6 @@ public class Play {
 		if(!game.end()) turn(p1, board);
 		if(!game.end()) turn(p2, board);
 		if(!game.end()) turn(p1, board);
+		*/
 	}
 }
