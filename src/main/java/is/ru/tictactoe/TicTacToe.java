@@ -27,7 +27,7 @@ public class TicTacToe {
 		s = in.next();
 		//System.out.println("Ég valdi: " + s); 
 
-        } while ((s == 'y') || (s =='Y');
+        } while ((s == 'y') || (s =='Y'));
 
 
         System.out.println("Bye bye !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
