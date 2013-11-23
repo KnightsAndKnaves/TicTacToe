@@ -24,6 +24,7 @@ public class Play {
 		Board board = new Board();
 		Game game = new Game(p1, p2, board);
 		game.intro();
+<<<<<<< HEAD
 		
 		
 		//while(){
@@ -31,6 +32,10 @@ public class Play {
 			
 		
 		/*
+=======
+
+		
+>>>>>>> parent of 5c8fbc6... lagfæring
 		//Ask if user wants to play
 		System.out.println("Want to play TicTacToe ? (J/N):");
 		Scanner a = new Scanner(System.in);
@@ -38,7 +43,7 @@ public class Play {
 		svar=a.nextLine();
 		if(svar=="n" || svar=="N")
 			return;
-		*/
+		
 
 
 		/*
