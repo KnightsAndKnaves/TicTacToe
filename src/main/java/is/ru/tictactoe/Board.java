@@ -72,7 +72,7 @@ public class Board {
 		//TODO Hvað á að gerast ef ekki er hægt að merkja þennan reit 
 	}
 	
-	private boolean canAdd(int pos) {
+	public boolean canAdd(int pos) {
 			if(board[pos] == ' ') return true;
 		return false;
 	}
