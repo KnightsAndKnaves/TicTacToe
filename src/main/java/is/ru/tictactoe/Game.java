@@ -38,7 +38,7 @@ public class Game {
 		return false;
 		*/
 	}
-	
+	/*
 	public boolean tie() {
 		for(int i = 0; i < 9; i++)
 			if(board.getBoard()[i] == ' ') return false;
@@ -51,4 +51,5 @@ public class Game {
 		if(tie()) return true;
 		return false;
 	}
+	*/
 }
