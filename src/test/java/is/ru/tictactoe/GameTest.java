@@ -11,6 +11,7 @@ public class GameTest {
 		
 		//Winner
 		bord.addLetter(0, 'X');
+		System.out.println("DEBUG2" + bord.getBoard[0]);
 		bord.addLetter(3, 'X');
 		bord.addLetter(6, 'X');
 		
