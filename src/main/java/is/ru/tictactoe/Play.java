@@ -11,6 +11,8 @@ public class Play {
 		//if win/tie, write on the screen who won
 	}
 	public static void main(String[] args) {
+		Routines test = new Routines();
+		test.greet();
 		Player p1 = new Player(1, 'X');
 		Player p2 = new Player(2, 'O');
 		Board board = new Board();
