@@ -28,7 +28,7 @@ public class Board {
 
 	public char checkWin() {
 		
-		if((this.getBoard()[0] == this.getBoard()[1]) == this.getBoard()[2]))
+		if((this.getBoard()[0] == this.getBoard()[1]) && (this.getBoard()[1] == this.getBoard()[2]))
 			return 'X';
 
 
