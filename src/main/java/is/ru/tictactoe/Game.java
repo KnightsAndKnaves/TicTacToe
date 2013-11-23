@@ -5,7 +5,9 @@ public class Game {
 	private Player player2;
 	private Board board;
 	
-
+	public Game(){
+		
+	}
 
 	public Game(Player p1, Player p2, Board board) {
 		this.player1 = p1;
@@ -25,26 +27,26 @@ public class Game {
 		System.out.println("#################################");
 	} 	
 	
-	public boolean win(char letter) {
+	public char checkWinner(Board bord, char letter) {
 		if(board.getBoard()[0] == letter && board.getBoard()[1] == letter && board.getBoard()[2] == letter)
-			return true;
+			return letter;
 		if(board.getBoard()[3] == letter && board.getBoard()[4] == letter && board.getBoard()[5] == letter)
-			return true;
+			return letter;
 		if(board.getBoard()[6] == letter && board.getBoard()[7] == letter && board.getBoard()[8] == letter)
-			return true;
+			return letter;
 		if(board.getBoard()[0] == letter && board.getBoard()[3] == letter && board.getBoard()[6] == letter)
-			return true;
+			return letter;
 		if(board.getBoard()[1] == letter && board.getBoard()[4] == letter && board.getBoard()[7] == letter)
-			return true;
+			return letter;
 		if(board.getBoard()[2] == letter && board.getBoard()[5] == letter && board.getBoard()[8] == letter)
-			return true;
+			return letter;
 		if(board.getBoard()[0] == letter && board.getBoard()[4] == letter && board.getBoard()[8] == letter)
-			return true;
+			return letter;
 		if(board.getBoard()[2] == letter && board.getBoard()[4] == letter && board.getBoard()[6] == letter)
-			return true;
-		return false;
+			return letter;
+		return ' ';
 	}
-	
+	/*
 	public boolean tie() {
 		for(int i = 0; i < 9; i++)
 			if(board.getBoard()[i] == ' ') return false;
@@ -57,4 +59,5 @@ public class Game {
 		if(tie()) return true;
 		return false;
 	}
+	*/
 }
