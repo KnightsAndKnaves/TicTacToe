@@ -23,7 +23,7 @@ public class TicTacToe {
 
 		int whosTurn = 1;
 		char winner = ' ';
-		while(game.checkWin()==' '){
+		while(board.checkWin()==' '){
 			if (whosTurn==1){
 				System.out.println("Leikmadur 1 á ad gera: ");
 				game.makeMove(p1, board);
@@ -39,7 +39,7 @@ public class TicTacToe {
 			board.printBoard();
 		}
 		
-		winner = game.checkWin();
+		winner = board.checkWin();
 
 		System.out.println("Leikmaður " + board.checkWin() + " sigrar");
 
