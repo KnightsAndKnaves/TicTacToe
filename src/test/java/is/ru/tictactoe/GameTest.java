@@ -5,7 +5,7 @@ import org.junit.Test;
 public class GameTest {
 
 	@Test
-	public void resultCheckWinBoard() {
+	public void resultCheckWinBoard1() {
 		//Game leikur = new Game();
 		Board bord = new Board();
 		
@@ -27,6 +27,32 @@ public class GameTest {
 		//System.out.println("DEBUG: " + bord.checkWin());
 
 		assertEquals('X', bord.checkWin());
+
+	}
+
+	@Test
+	public void resultCheckWinBoard2() {
+		//Game leikur = new Game();
+		Board bord = new Board();
+		
+		//Winner
+		bord.addLetter(0, 'O');
+		//System.out.println("DEBUG2" + bord.getBoard()[0]);
+		bord.addLetter(3, 'X');
+		bord.addLetter(6, 'X');
+		
+		
+		bord.addLetter(1, 'X');
+		bord.addLetter(2, 'O');
+		bord.addLetter(4, 'O');
+		bord.addLetter(5, 'X');
+		bord.addLetter(7, 'O');
+		bord.addLetter(8, 'X');
+		bord.printBoard();
+
+		//System.out.println("DEBUG: " + bord.checkWin());
+
+		assertEquals('T', bord.checkWin());
 
 	}
 
