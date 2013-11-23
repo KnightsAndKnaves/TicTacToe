@@ -26,10 +26,31 @@ public class Board {
 		return board;
 	}
 
+
+	// Þetta fall athugar hver er sigurvegari og skilar merkinu hans (X eða O)
 	public char checkWin() {
 		
+		// Láréttar línur yfir
+		if((this.getBoard()[0] == this.getBoard()[1]) && (this.getBoard()[1] == this.getBoard()[2]))
+			return this.getBoard()[0];
+		if((this.getBoard()[3] == this.getBoard()[4]) && (this.getBoard()[4] == this.getBoard()[5]))
+			return this.getBoard()[3];
+		if((this.getBoard()[6] == this.getBoard()[7]) && (this.getBoard()[7] == this.getBoard()[8]))
+			return this.getBoard()[6];
+
+		//Lóðréttar línur
 		if((this.getBoard()[0] == this.getBoard()[3]) && (this.getBoard()[3] == this.getBoard()[6]))
-			return 'X';
+			return this.getBoard()[0];
+		if((this.getBoard()[1] == this.getBoard()[4]) && (this.getBoard()[4] == this.getBoard()[7]))
+			return this.getBoard()[1];
+		if((this.getBoard()[2] == this.getBoard()[5]) && (this.getBoard()[5] == this.getBoard()[8]))
+			return this.getBoard()[2];
+
+		// Ská línur
+		if((this.getBoard()[0] == this.getBoard()[4]) && (this.getBoard()[4] == this.getBoard()[8]))
+			return this.getBoard()[0];
+		if((this.getBoard()[2] == this.getBoard()[4]) && (this.getBoard()[4] == this.getBoard()[6]))
+			return this.getBoard()[2];
 
 
 		// Skilar ef enginn sigurvegari
