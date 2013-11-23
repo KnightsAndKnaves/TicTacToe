@@ -37,6 +37,7 @@ public class Game {
 			return true;
 		return false;
 		*/
+		return 'X';
 	}
 	/*
 	public boolean tie() {
