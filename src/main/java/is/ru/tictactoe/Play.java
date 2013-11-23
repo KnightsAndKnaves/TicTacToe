@@ -44,7 +44,7 @@ public class Play {
 		}
 		turn(p1, board);
 		if(!game.end()) turn(p2, board);
-		if(!game.end()) turn(p1, board);j
+		if(!game.end()) turn(p1, board);
 		if(!game.end()) turn(p2, board);
 		if(!game.end()) turn(p1, board);
 	}
