@@ -4,6 +4,7 @@ public class Play {
 	
 	public static void turn(Player player, Board board) {
 		System.out.print("Enter position: ");
+		
 		// get int pos from input using parseInt
 		int pos=2;
 		board.addLetter(pos, player.getLetter());
@@ -15,7 +16,7 @@ public class Play {
 
 	public static void main(String[] args) {
 		Routines test = new Routines();
-		//ystem.Out.Println("ÉG ER KYNNING");
+		System.out.println("ÉG ER KYNNING");
 		Player p1 = new Player(1, 'X');
 		Player p2 = new Player(2, 'O');
 		Board board = new Board();
