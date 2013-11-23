@@ -76,7 +76,8 @@ public class Board {
 	}
 	
 	public boolean canAdd(int pos) {
-			if(board[pos] == ' ') return true;
+		if(board[pos] != 'X' || board[pos] != 'O') 
+			return true;
 		return false;
 	}
 }
