@@ -62,7 +62,7 @@ public class Board {
 			return this.getBoard()[2];
 
 		if(totalMoves==9)
-			return "TIE";
+			return 'T';
 		// Skilar ef enginn sigurvegari
 		return ' ';
 	}

@@ -41,7 +41,7 @@ public class TicTacToe {
 		
 		winner = board.checkWin();
 
-		if(winner=='TIE'){
+		if(winner=='T'){
 			System.out.println("JAFNTEFLI - ENGINN VINNUR");
 		}
 		else{
