@@ -10,11 +10,17 @@ public class Game {
 		this.player2 = p2;
 		this.board = new Board();
 	}
-	
+	/*
 	public Player whosTurn(int playerID) {
 		if(playerID == 1) return player1;
 		else if(playerID == 2) return player2;
 		else return null;
+	}
+	*/
+	public void printIntro(){
+		System.out.println("##############################");
+		System.out.println("### Want to play TicTacToe ###");
+		System.out.println("##############################");
 	}
 	
 	public char checkWin(char letter) {
