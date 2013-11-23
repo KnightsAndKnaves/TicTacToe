@@ -27,11 +27,10 @@ public class Play {
 
 		
 		//Ask if user wants to play
-		System.out.println("Eigum við að spila ? (J/N):");
+		System.out.println("Want to play TicTacToe ? (J/N):");
 		Scanner a = new Scanner(System.in);
 		String svar;
 		svar=a.nextLine();
-		System.out.println("Þú valdir:" + svar);
 		if(svar=="n" || svar=="N")
 			System.exit(0);
 		
