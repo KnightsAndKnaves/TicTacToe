@@ -27,13 +27,13 @@ public class TicTacToe {
 			if (whosTurn==1){
 				System.out.println("Leikmadur 1 á ad gera: ");
 				makeMove(p1, board);
-				whosTurn=2
+				whosTurn=2;
 			}
 			else{
 				System.out.println("Leikmadur 2 á ad gera: ");
 
 				makeMove(p2, board);
-				whosTurn=1
+				whosTurn=1;
 			}
 			board.printBoard();
 		}
