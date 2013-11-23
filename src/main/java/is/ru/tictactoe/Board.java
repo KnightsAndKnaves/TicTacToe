@@ -8,7 +8,7 @@ public class Board {
 		for(int i = 0; i < 9; i++){
 			char c = Character.forDigit(i, 10);
 			board[i] = c;
-			System.out.println("BOARD" + board[i]);
+			//System.out.println("BOARD" + board[i]);
 		}
 	}
 	/*

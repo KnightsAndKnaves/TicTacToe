@@ -16,36 +16,30 @@ public class TicTacToe {
 		
 		int moves=0;
 
-		System.out.println(p1.getLetter());
-		System.out.println(p2.getLetter());
-		/*
-		while(board.checkWin == ' ')
-		{
 
+		//1 leikur og leikmenn skiptast á
+
+
+
+		int whosTurn = 1;
+		char winner = ' ';
+		while(game.checkWin==' '){
+			if whosTurn==1{
+				System.out.printlm("Leikmadur 1 á ad gera: ");
+				makeMove(p1, board);
+				whosTurn=2
+			}
+			else{
+				System.out.printlm("Leikmadur 2 á ad gera: ");
+
+				makeMove(p2, board);
+				whosTurn=1
+			}
 		}
-		*/
+		board.printBoard();
+		winner = game.checkWin();
 
 		System.out.println("Leikmaður " + board.checkWin() + " sigrar");
-
-
-
-
-
-
-
-
-		/*
-		while(game.checkWin==' '){
-
-
-		}
-
-		*/
-		//Leyfa spilara að skiptast á að gera
-
-
-
-		
 
 
 		/*
