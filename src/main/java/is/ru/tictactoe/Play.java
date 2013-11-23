@@ -19,7 +19,7 @@ public class Play {
 		Player p2 = new Player(2, 'O');
 		Board board = new Board();
 		Game game = new Game(p1, p2, board);
-		System.out.println(game.intro());
+		game.intro();
 		for(int i = 0; i < 2; i++) {
 			turn(p1, board);
 			turn(p2, board);
