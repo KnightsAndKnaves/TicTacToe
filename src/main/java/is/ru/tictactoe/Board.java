@@ -2,7 +2,10 @@ package is.ru.tictactoe;
 
 public class Board {
 	private char[] board;
+	private int totalMoves;
 	
+	// Tilbúið
+	// Sjálfgefinn smiður
 	public Board() {
 		this.board = new char[9];
 		for(int i = 0; i < 9; i++){
@@ -10,12 +13,9 @@ public class Board {
 			board[i] = c;
 			//System.out.println("BOARD" + board[i]);
 		}
+		totalMoves=0;
 	}
-	/*
-	public char[] getBoard() {
-		return board;
-	}
-	*/
+	
 
 	// Tilbúið
 	// Prentar út stöðu borðsins
@@ -61,20 +61,27 @@ public class Board {
 		if((this.getBoard()[2] == this.getBoard()[4]) && (this.getBoard()[4] == this.getBoard()[6]))
 			return this.getBoard()[2];
 
-
+		if(totalMoves==9)
+			return "TIE";
 		// Skilar ef enginn sigurvegari
 		return ' ';
 	}
 
 
-
+	// Tilbúið
 	// Merkir við í borðið
 	public void addLetter(int pos, char letter) {
 		if(pos < 9 && pos >= 0 && canAdd(pos))
+		{
 			board[pos] = letter;
+			totalMoves++;
+		}
 		//TODO Hvað á að gerast ef ekki er hægt að merkja þennan reit 
 	}
 	
+
+	//Tilbúið
+	// Athugar hvort einhver hafi nú þegar merkt við í reitinn
 	public boolean canAdd(int pos) {
 		if(board[pos] != 'X' && board[pos] != 'O') 
 			return true;

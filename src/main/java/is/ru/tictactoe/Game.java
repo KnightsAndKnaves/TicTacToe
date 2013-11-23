@@ -23,17 +23,17 @@ public class Game {
 	}
 	*/
 	public void printIntro(){
-		System.out.println("###############################");
-		System.out.println("## Want to play TicTacToe ? ###");
-		System.out.println("###############################");
+		System.out.println("################################");
+		System.out.println("### Want to play TicTacToe ? ###");
+		System.out.println("################################");
 	}
 
 
 	public void makeMove(Player player, Board board){
+
+
 		Scanner sc = new Scanner(System.in);
  		int i = sc.nextInt();
-
-
 		board.addLetter(i, player.getLetter());
 	}
 
