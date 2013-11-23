@@ -31,7 +31,7 @@ public class GameTest {
 
 
 	@Test
-	public void resultInGame2() {
+	public void resultCanAddInBoard() {
 		Board bord = new Board();
 		
 		//Winner
