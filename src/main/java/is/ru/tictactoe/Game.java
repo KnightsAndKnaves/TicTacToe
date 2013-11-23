@@ -33,7 +33,7 @@ public class Game {
 	
 	public char checkWin(char letter) {
 		
-		if(board.getBoard()[0] == board.getBoard()[1] == board.getBoard()[2])
+		if(board.getBoard()[0] == letter && board.getBoard()[1] == letter && board.getBoard()[2] == letter)
 			return board.getBoard()[0];
 		if(board.getBoard()[3] == letter && board.getBoard()[4] == letter && board.getBoard()[5] == letter)
 			return board.getBoard()[3];
@@ -52,7 +52,7 @@ public class Game {
 
 
 		// Skilar ef enginn sigurvegari
-		return " ";
+		return ' ';
 	}
 	/*
 	public boolean tie() {
