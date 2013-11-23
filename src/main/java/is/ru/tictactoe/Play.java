@@ -1,6 +1,7 @@
 package is.ru.tictactoe;
 
 public class Play {
+	/*
 	public static void turn(Player player, Board board) {
 		System.out.print("Enter position: ");
 		// get int pos from input using parseInt
@@ -10,6 +11,8 @@ public class Play {
 		// check for win or tie
 		//if win/tie, write on the screen who won
 	}
+	*/
+	
 	public static void main(String[] args) {
 		Routines test = new Routines();
 		test.greet();
