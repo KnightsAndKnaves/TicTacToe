@@ -31,10 +31,13 @@ public class Game {
 
 	public void makeMove(Player player, Board board){
 
+		do{
+			System.out.println("Leikmadur " + player.getId() +  " á ad gera: ");
+			Scanner sc = new Scanner(System.in);
+ 			int i = sc.nextInt();
+ 		}while(!board.canAdd(i))
 
-		Scanner sc = new Scanner(System.in);
- 		int i = sc.nextInt();
- 		System.out.print("Leikmadur " + player.getId() +  "á ad gera: ");
+
 		board.addLetter(i, player.getLetter());
 	}
 

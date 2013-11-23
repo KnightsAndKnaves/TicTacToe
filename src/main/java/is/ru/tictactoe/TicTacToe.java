@@ -23,14 +23,11 @@ public class TicTacToe {
 			char winner = ' ';
 			while(board.checkWin()==' '){
 				if (whosTurn==1){
-					System.out.println("Leikmadur 1 á ad gera: ");
 					game.makeMove(p1, board);
 					whosTurn=2;
 				}
 				else
 				{
-					System.out.println("Leikmadur 2 á ad gera: ");
-
 					game.makeMove(p2, board);
 					whosTurn=1;
 				}
