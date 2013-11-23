@@ -29,7 +29,8 @@ public class TicTacToe {
 				game.makeMove(p1, board);
 				whosTurn=2;
 			}
-			else{
+			else
+			{
 				System.out.println("Leikmadur 2 á ad gera: ");
 
 				game.makeMove(p2, board);

@@ -1,4 +1,5 @@
 package is.ru.tictactoe;
+import java.util.Scanner;
 
 public class Game {
 	private Player player1;
