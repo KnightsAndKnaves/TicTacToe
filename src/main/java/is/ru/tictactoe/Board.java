@@ -21,6 +21,13 @@ public class Board {
 		System.out.println(board[6] + " " + board[7] + " " + board[8]);
 	}
 
+
+	public char[] getBoard(){
+		return board;
+	}
+
+
+
 	public void addLetter(int pos, char letter) {
 		if(pos < 9 && pos >= 0 && canAdd(pos))
 			board[pos] = letter;
