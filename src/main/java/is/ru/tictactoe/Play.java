@@ -1,5 +1,7 @@
 package is.ru.tictactoe;
 
+import java.util.Scanner;
+
 public class Play {
 	
 	public static void turn(Player player, Board board) {
