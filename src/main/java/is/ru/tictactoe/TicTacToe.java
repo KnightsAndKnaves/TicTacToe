@@ -48,7 +48,7 @@ public class TicTacToe {
 
 			System.out.println("Viljið þið spila aftur ? 1=já og 2=nei");
 			Scanner sc = new Scanner(System.in);
- 			int i = sc.nextInt();
+ 			i = sc.nextInt();
 		}
     }
 }
