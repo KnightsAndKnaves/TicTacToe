@@ -17,7 +17,8 @@ public class Game {
 		else return null;
 	}
 	
-	public boolean win(char letter) {
+	public char checkWin(char letter) {
+		/*
 		if(board.getBoard()[0] == letter && board.getBoard()[1] == letter && board.getBoard()[2] == letter)
 			return true;
 		if(board.getBoard()[3] == letter && board.getBoard()[4] == letter && board.getBoard()[5] == letter)
@@ -35,6 +36,7 @@ public class Game {
 		if(board.getBoard()[2] == letter && board.getBoard()[4] == letter && board.getBoard()[6] == letter)
 			return true;
 		return false;
+		*/
 	}
 	
 	public boolean tie() {
