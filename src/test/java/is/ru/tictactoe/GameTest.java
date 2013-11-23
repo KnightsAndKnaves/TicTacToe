@@ -11,7 +11,7 @@ public class GameTest {
 		
 		//Winner
 		bord.addLetter(0, 'X');
-		System.out.println("DEBUG2" + bord.getBoard()[0]);
+		//System.out.println("DEBUG2" + bord.getBoard()[0]);
 		bord.addLetter(3, 'X');
 		bord.addLetter(6, 'X');
 		
@@ -24,7 +24,7 @@ public class GameTest {
 		bord.addLetter(8, 'O');
 		bord.printBoard();
 
-		System.out.println("DEBUG: " + bord.checkWin());
+		//System.out.println("DEBUG: " + bord.checkWin());
 
 		assertEquals('X', bord.checkWin());
 
@@ -39,7 +39,7 @@ public class GameTest {
 		bord.addLetter(0, 'X');
 		bord.addLetter(0, 'O');
 
-		bord.printBoard();
+		//bord.printBoard();
 		
 
 		assertEquals(false, bord.canAdd(0));
