@@ -26,6 +26,16 @@ public class Board {
 		return board;
 	}
 
+	public char checkWin() {
+		
+		if(board[0] ==  board[3] == board[6])
+			return board[0];
+
+
+		// Skilar ef enginn sigurvegari
+		return ' ';
+	}
+
 
 
 	public void addLetter(int pos, char letter) {

@@ -24,7 +24,7 @@ public class GameTest {
 		bord.printBoard();
 		
 
-		//assertEquals('X', leikur.checkWin(bord, 'X'));
+		assertEquals('X', bord.checkWin());
 		// TODO Auto-generated method stub
 
 	}

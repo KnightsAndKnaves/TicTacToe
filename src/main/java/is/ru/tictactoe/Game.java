@@ -10,6 +10,10 @@ public class Game {
 		this.player2 = p2;
 		this.board = new Board();
 	}
+
+	public Game() {
+		this.board = new Board();
+	}
 	/*
 	public Player whosTurn(int playerID) {
 		if(playerID == 1) return player1;
