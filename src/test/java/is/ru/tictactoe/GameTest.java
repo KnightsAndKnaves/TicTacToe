@@ -5,7 +5,7 @@ import org.junit.Test;
 public class GameTest {
 
 	@Test
-	public void resultInGame() {
+	public void resultCheckWinBoard() {
 		//Game leikur = new Game();
 		Board bord = new Board();
 		
@@ -31,7 +31,7 @@ public class GameTest {
 
 
 	@Test
-	public void resultCanAddInBoard() {
+	public void resultCanAddBoard() {
 		Board bord = new Board();
 		
 		//Winner
