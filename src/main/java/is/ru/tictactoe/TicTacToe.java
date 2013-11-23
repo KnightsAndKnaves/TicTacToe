@@ -15,9 +15,24 @@ public class TicTacToe {
 		game.printIntro();
 		
 
-		Scanner in = new Scanner(System.in);
-		String s = in.next();
-		System.out.println("Ég valdi: " + s);
+		char s;
+		do {
+            
+
+
+
+		// Play again ?
+		System.out.println("Want to play again ? (y/n):");
+        Scanner in = new Scanner(System.in);
+		s = in.next();
+		//System.out.println("Ég valdi: " + s); 
+
+        } while ((s == "y") || (s =="Y");
+
+
+        System.out.println("Bye bye !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+
+
 
 
 

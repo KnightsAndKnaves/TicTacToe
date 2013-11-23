@@ -22,6 +22,8 @@ public class Game {
 		System.out.println("### Want to play TicTacToe ###");
 		System.out.println("##############################");
 	}
+
+	
 	
 	public char checkWin(char letter) {
 		/*
