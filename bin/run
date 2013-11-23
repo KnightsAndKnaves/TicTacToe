@@ -2,5 +2,3 @@
 
 mvn clean
 mvn compile
-mvn test
-mvn exec:java
