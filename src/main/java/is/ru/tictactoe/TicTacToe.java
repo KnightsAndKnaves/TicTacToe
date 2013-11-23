@@ -19,13 +19,14 @@ public class TicTacToe {
 		while{answer == 1){
 
 
+			// Play again ?
 			System.out.println("Want to play again ? (y/n):");
         	Scanner in = new Scanner(System.in);
-			answer = Integer.parseInt(answer);
+			answer = Integer.parseInt(in.next());
 			//System.out.println("Ég valdi: " + s); 
 
 
-			// Play again ?
+			
 		}
 		
 		
