@@ -20,6 +20,16 @@ public class Play {
 		Board board = new Board();
 		Game game = new Game(p1, p2, board);
 		game.intro();
+
+		
+		System.out.println("Eigum við að spila ? (J/N):");
+		Scanner a = new Scanner(System.in);
+		String svar;
+		svar=a.nextLine();
+		System.out.println("Þú valdir:" + svar);
+
+
+
 		for(int i = 0; i < 2; i++) {
 			turn(p1, board);
 			turn(p2, board);
