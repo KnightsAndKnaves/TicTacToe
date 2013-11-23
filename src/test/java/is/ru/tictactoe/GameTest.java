@@ -48,7 +48,7 @@ public class GameTest {
 		bord.addLetter(5, 'X');
 		bord.addLetter(7, 'O');
 		bord.addLetter(8, 'X');
-		bord.printBoard();
+		//bord.printBoard();
 
 		//System.out.println("DEBUG: " + bord.checkWin());
 
@@ -63,7 +63,7 @@ public class GameTest {
 		
 		//Winner
 		bord.addLetter(0, 'X');
-		bord.addLetter(0, 'O');
+		//bord.addLetter(0, 'O');
 
 		//bord.printBoard();
 		
