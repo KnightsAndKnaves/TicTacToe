@@ -22,7 +22,8 @@ public class GameTest {
 		bord.addLetter(7, 'X');
 		bord.addLetter(8, 'O');
 		bord.printBoard();
-		
+
+		System.out.println("DEBUG: " + bord.checkWin());
 
 		assertEquals('X', bord.checkWin());
 
