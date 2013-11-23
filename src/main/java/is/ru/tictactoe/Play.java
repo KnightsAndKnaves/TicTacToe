@@ -16,7 +16,7 @@ public class Play {
 
 	public static void main(String[] args) {
 		Routines test = new Routines();
-		System.out.println("ÉG ER KYNNING");
+		System.out.println(test.greet());
 		Player p1 = new Player(1, 'X');
 		Player p2 = new Player(2, 'O');
 		Board board = new Board();
