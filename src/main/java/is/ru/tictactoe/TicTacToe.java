@@ -14,30 +14,10 @@ public class TicTacToe {
 		Game game = new Game(p1, p2, board);
 		game.printIntro();
 		
-
-		int answer = 1;
-		while{answer == 1){
-
-
-			// Play again ?
-			System.out.println("Want to play again ? (y/n):");
-        	Scanner in = new Scanner(System.in);
-			answer = Integer.parseInt(in.next());
-			//System.out.println("Ég valdi: " + s); 
-
-
-			
-		}
 		
+
+
 		
-         
-
-
-        System.out.println("Bye bye !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-
-
-
-
 
 
 		/*

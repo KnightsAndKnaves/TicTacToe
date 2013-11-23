@@ -23,7 +23,11 @@ public class Game {
 		System.out.println("##############################");
 	}
 
-	
+	public boolean playAgain(){
+		
+	}
+
+
 	
 	public char checkWin(char letter) {
 		/*
