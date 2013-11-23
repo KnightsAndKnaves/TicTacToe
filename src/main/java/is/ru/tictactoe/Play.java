@@ -24,7 +24,12 @@ public class Play {
 		Board board = new Board();
 		Game game = new Game(p1, p2, board);
 		game.intro();
-
+		
+		
+		while(){
+			
+			
+		}
 		/*
 		//Ask if user wants to play
 		System.out.println("Want to play TicTacToe ? (J/N):");
