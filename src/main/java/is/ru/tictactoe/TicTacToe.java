@@ -1,15 +1,27 @@
 package is.ru.tictactoe;
 
+import java.util.Scanner;
+
 public class TicTacToe {
 
 	public static void main(String[] args){
-        //System.out.println("Hello");
 
+
+        // Initialize game
         Player p1 = new Player(1, 'X');
 		Player p2 = new Player(2, 'O');
 		Board board = new Board();
 		Game game = new Game(p1, p2, board);
 		game.printIntro();
+		
+
+		Scanner in = new Scanner(System.in);
+		String s = in.next();
+		System.out.println("Ég valdi: " + s);
+
+
+
+
 		/*
 		for(int i = 0; i < 2; i++) {
 			turn(p1, board);
