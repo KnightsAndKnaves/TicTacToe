@@ -14,7 +14,15 @@ public class TicTacToe {
 		Game game = new Game(p1, p2, board);
 		game.printIntro();
 		
-		
+		/*
+		while(game.checkWin==' '){
+
+
+		}
+
+		*/
+		//Leyfa spilara að skiptast á að gera
+
 
 
 		

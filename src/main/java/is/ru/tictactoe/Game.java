@@ -32,26 +32,27 @@ public class Game {
 
 	
 	public char checkWin(char letter) {
-		/*
-		if(board.getBoard()[0] == letter && board.getBoard()[1] == letter && board.getBoard()[2] == letter)
-			return true;
+		
+		if(board.getBoard()[0] == board.getBoard()[1] == board.getBoard()[2])
+			return board.getBoard()[0];
 		if(board.getBoard()[3] == letter && board.getBoard()[4] == letter && board.getBoard()[5] == letter)
-			return true;
+			return board.getBoard()[3];
 		if(board.getBoard()[6] == letter && board.getBoard()[7] == letter && board.getBoard()[8] == letter)
-			return true;
+			return board.getBoard()[6];
 		if(board.getBoard()[0] == letter && board.getBoard()[3] == letter && board.getBoard()[6] == letter)
-			return true;
+			return board.getBoard()[0];
 		if(board.getBoard()[1] == letter && board.getBoard()[4] == letter && board.getBoard()[7] == letter)
-			return true;
+			return board.getBoard()[1];
 		if(board.getBoard()[2] == letter && board.getBoard()[5] == letter && board.getBoard()[8] == letter)
-			return true;
+			return board.getBoard()[2];
 		if(board.getBoard()[0] == letter && board.getBoard()[4] == letter && board.getBoard()[8] == letter)
-			return true;
+			return board.getBoard()[0];
 		if(board.getBoard()[2] == letter && board.getBoard()[4] == letter && board.getBoard()[6] == letter)
-			return true;
-		return false;
-		*/
-		return 'X';
+			return return board.getBoard()[2];;
+
+
+		// Skilar ef enginn sigurvegari
+		return " ";
 	}
 	/*
 	public boolean tie() {
