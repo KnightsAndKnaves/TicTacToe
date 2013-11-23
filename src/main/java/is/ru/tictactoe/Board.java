@@ -28,7 +28,7 @@ public class Board {
 
 	public char checkWin() {
 		
-		if(board[0] ==  board[3] == board[6])
+		if((board[0] ==  board[3]) && (board[3] board[6]))
 			return board[0];
 
 
