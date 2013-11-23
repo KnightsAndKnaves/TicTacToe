@@ -32,7 +32,7 @@ public class Play {
 		String svar;
 		svar=a.nextLine();
 		if(svar=="n" || svar=="N")
-			System.exit(0);
+			return;
 		
 
 
